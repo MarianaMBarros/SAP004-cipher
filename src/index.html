@@ -10,43 +10,53 @@
       <header>
         <h1>CIFRAS DO AMOR</h1>
         <p>
-          "Cartas de amor... Quem as não tem... Cartas de amor... Pedaços de
-          dor... Sentidas de alguém."(Francisco José) <br />
-          Uma carta de amor simboliza o desejo de estar com a pessoa amada.
-          <br />
-          Apesar de vivermos numa era digital, podemos manter habitos antigos
-          com o mesmo gesto de carinho e nos comunicando com alguém que tanto
-          amamos. <br />
-          E Escreve-las em segurança nos faz acreditar que nestes tempos de
-          tecnologia ainda podemos manter a nossa privacidade. <br />
-          Para que isso aconteça basta você digitar a sua carta, criptógrafa-la
-          e enviar a carta já criptografada para a pessoa que deseja. <br />
-          Ao recebe-la ela poderá retornar e descriptografia para ler o seu
-          conteúdo. <br />
-          Assim apenas você e a pessoa saberão o conteúdo da carta. <br />
-          Se o seu Amor é lindo e tem sua beleza declare-se.
+          "Cartas de amor<br />Quem as não tem<br />Cartas de amor<br />Pedaços
+          de dor<br />Sentidas de alguém."(Francisco José)
+        </p>
+        <br />
+        <p>
+          Uma carta de amor simboliza a importância da relação de carinho e
+          desejo de estar com a pessoa amada. <br />
+          Vivermos numa era digital, com isso hoje as escritas a mão estão
+          guardadas em uma gaveta.<br />Podemos manter hábitos antigos com o
+          mesmo gesto de carinho e nos comunicando com alguém que tanto
+          amamos.<br />
+          E ao escreve-las nos faz acreditar que mesmo em tempos de tecnologia
+          ainda podemos manter a nossa privacidade. <br />Para que isso aconteça
+          basta você digitar a sua carta, criptografa-la e enviar a carta já
+          criptografada para a pessoa que deseja. <br />Ao recebe-la ela poderá
+          retornar e descriptografia para ler o seu conteúdo.<br />
+          Assim apenas você e a pessoa saberá o conteúdo da carta.
         </p>
       </header>
+      <main>
+        <input
+          id="name"
+          type="text"
+          placeholder="Deslocamento"
+          maxlength="10"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+        />
 
-      <input id="name" type="text" placeholder="Deslocamento" maxlength="10" />
-      <textarea
-        id="letters"
-        cols="50"
-        rows="20"
-        placeholder="Digite sua Carta de Amor"
-      ></textarea>
+        <textarea
+          id="letters"
+          cols="50"
+          rows="20"
+          placeholder="Digite sua Carta de Amor"
+        ></textarea>
 
-      <button type="button" id="btnCripitar">
-        Criptografar sua carta
-      </button>
+        <button type="button" id="btnCripitar">
+          Criptografar sua carta
+        </button>
 
-      <button type="button" id="btnDecripitar">
-        Descriptografar sua Carta
-      </button>
+        <button type="button" id="btnDecripitar">
+          Descriptografar sua Carta
+        </button>
 
-      <textarea id="result" cols="30" rows="10"></textarea>
+        <textarea id="result" cols="30" rows="10"></textarea>
 
-      <button id="btnClean" type="button">Limpar</button>
+        <button id="btnClean" type="button">Limpar</button>
+      </main>
 
       <script src="index.js" type="module"></script>
     </div>
