@@ -57,7 +57,9 @@ const cipher = {
       if (posicao == -1) {
         novaFrase = `${novaFrase}${letra}`;
       } else {
-        let novaPosicao = (posicao - desloc + tamAlfabeto) % tamAlfabeto;
+        let novaPosicao =
+          (((posicao - desloc + tamAlfabeto) % tamAlfabeto) + tamAlfabeto) %
+          tamAlfabeto;
         let novaLetra = alphabet[novaPosicao];
         novaFrase = `${novaFrase}${novaLetra}`;
       }
