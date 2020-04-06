@@ -29,42 +29,43 @@ const alphabet = [
 
 const cipher = {
   encode: function(offset, message) {
-    let novaFrase = "";
-    const frase = message.toUpperCase();
-    const desloc = offset;
-    const tamAlfabeto = 26;
-    for (let i = 0; i < frase.length; i++) {
-      let letra = frase[i];
-      let posicao = alphabet.indexOf(letra);
-      if (posicao == -1) {
-        novaFrase = `${novaFrase}${letra}`;
+    let newPhrase = "";
+    const phrase = message.toUpperCase();
+    const displace = offset;
+    const alphabetSize = 26;
+    for (let i = 0; i < phrase.length; i++) {
+      let letterAlphabet = phrase[i];
+      let position = alphabet.indexOf(letterAlphabet);
+      if (position == -1) {
+        newPhrase = `${newPhrase}${letterAlphabet}`;
       } else {
-        let novaPosicao = (posicao + desloc) % tamAlfabeto;
-        let novaLetra = alphabet[novaPosicao];
-        novaFrase = `${novaFrase}${novaLetra}`;
+        let newPosition = (position + displace) % alphabetSize;
+        let newLetterAlphabet = alphabet[newPosition];
+        newPhrase = `${newPhrase}${newLetterAlphabet}`;
       }
     }
-    return novaFrase;
+    return newPhrase;
   },
   decode: function(offset, message) {
-    let novaFrase = "";
-    const frase = message.toUpperCase();
-    const desloc = offset;
-    const tamAlfabeto = 26;
-    for (let i = 0; i < frase.length; i++) {
-      let letra = frase[i];
-      let posicao = alphabet.indexOf(letra);
-      if (posicao == -1) {
-        novaFrase = `${novaFrase}${letra}`;
+    let newPhrase = "";
+    const phrase = message.toUpperCase();
+    const displace = offset;
+    const alphabetSize = 26;
+    for (let i = 0; i < phrase.length; i++) {
+      let letterAlphabet = phrase[i];
+      let position = alphabet.indexOf(letterAlphabet);
+      if (position == -1) {
+        newPhrase = `${newPhrase}${letterAlphabet}`;
       } else {
-        let novaPosicao =
-          (((posicao - desloc + tamAlfabeto) % tamAlfabeto) + tamAlfabeto) %
-          tamAlfabeto;
-        let novaLetra = alphabet[novaPosicao];
-        novaFrase = `${novaFrase}${novaLetra}`;
+        let newPosition =
+          (((position - displace + alphabetSize) % alphabetSize) +
+            alphabetSize) %
+          alphabetSize;
+        let newLetterAlphabet = alphabet[newPosition];
+        newPhrase = `${newPhrase}${newLetterAlphabet}`;
       }
     }
-    return novaFrase;
+    return newPhrase;
   }
 };
 
