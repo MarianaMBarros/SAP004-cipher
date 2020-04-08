@@ -9,12 +9,7 @@
     <div id="root">
       <header>
         <h1>CIFRAS DO AMOR</h1>
-        <p>
-          "...Cartas de amor<br />Quem as não tem<br />Cartas de amor<br />Pedaços
-          de dor<br />Sentidas de alguém..."<br />(Francisco José)
-        </p>
-        <br />
-        <div id="introduction">
+        <div>
           <p>
             Uma carta de amor simboliza a importância da relação de carinho e
             desejo de estar com a pessoa amada. <br />
@@ -31,34 +26,42 @@
           </p>
         </div>
       </header>
-      <main id="principal">
-        <input
-          id="numberDisplace"
-          type="text"
-          placeholder="Deslocamento"
-          maxlength="10"
-          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
-        />
 
-        <textarea
-          id="letters"
-          cols="50"
-          rows="20"
-          placeholder="Digite sua Carta de Amor"
-        ></textarea>
+      <main>
+        <div id="oi">
+          <input
+            id="numberDisplace"
+            type="text"
+            placeholder="Deslocamento"
+            maxlength="10"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          />
+          <div>
+            <textarea
+              id="letters"
+              cols="50"
+              rows="20"
+              placeholder="Digite sua Carta de Amor"
+            ></textarea>
+          </div>
+        </div>
 
-        <button type="button" id="btnEncode">
-          Criptografar sua carta
-        </button>
+        <div id="ola">
+          <button id="btnEncode" type="button">
+            Criptografar sua carta
+          </button>
 
-        <button type="button" id="btnDecode">
-          Descriptografar sua Carta
-        </button>
+          <button id="btnClean" type="button">Limpar</button>
 
-        <textarea id="result" cols="30" rows="10"></textarea>
+          <button id="btnDecode" type="button">
+            Descriptografar sua Carta
+          </button>
+        </div>
 
-        <button id="btnClean" type="button">Limpar</button>
+        <textarea id="result" cols="50" rows="20"></textarea>
       </main>
+
+      <footer class="end">Desenvolvido Por Mariana Barros</footer>
 
       <script src="index.js" type="module"></script>
     </div>

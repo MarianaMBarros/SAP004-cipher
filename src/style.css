@@ -1,37 +1,69 @@
+/* * {
+  background-color: rgba(255, 255, 0, 0.274);
+} */
+
 body {
-  background-image: url("imagemFundo.jpg");
+  background-image: url("img.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  text-align: center;
-}
-
-.principal {
-  display: flex;
-  flex-direction: column;
-}
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  border: 1px solid #ccc;
+  margin: auto;
 }
 
 p {
-  background-color: #e62c5aa9;
-  box-sizing: border-box;
-  text-align: center;
   font-style: italic;
   font-family: Courier, monospace;
-  border: 1px;
-  color: white;
+  color: rgba(71, 16, 43, 0.938);
   font-size: 15px;
-  min-height: 100px;
-  width: 500px;
+  background-color: #ebb0bfd5;
+  text-align: center;
 }
 
 h1 {
-  color: whitesmoke;
+  margin-top: 0%;
+  padding: 10px;
+  background-color: #ebb0bfc0;
+  text-align: center;
+  color: rgba(71, 16, 43, 0.938);
   font-style: italic bold;
   font-size: 60px;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+main {
+  background-color: #ebb0bf65;
+  border: solid rgba(71, 16, 43, 0.938);
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  background-color: #f1a3b6c9;
+  color: rgba(71, 16, 43, 0.938);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: #e5b6c2f1;
+  color: rgba(71, 16, 43, 0.938);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#ola {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#oi {
+  margin: 8px;
 }
