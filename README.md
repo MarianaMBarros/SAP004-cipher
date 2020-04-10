@@ -19,11 +19,12 @@ tipo de cifra por substituição, em que cada letra do texto original é
 substituida por outra que se encontra há um número fixo de posições
 (deslocamento) mais a frente do mesmo alfabeto.
 
-## 2. Resumo do projeto
+## 2. Resumo do Projeto
+O projeto tem o proposito de criar uma aplicação na web de cifragem e decifragem entre pessoas que desejam manter os antigos abtos de cartas de amor.
+![cifras-do-amor](src/img.jpg)
+## 3.Definições
 
-
-
-## 3. Considerações gerais
+## 4. Considerações gerais
 
 
 

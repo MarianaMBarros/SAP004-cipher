@@ -1,69 +1,103 @@
-/* * {
-  background-color: rgba(255, 255, 0, 0.274);
-} */
-
-body {
-  background-image: url("img.jpg");
-  background-size: 100%;
+html {
+  background: url("img.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
 }
+/* body {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+} */
 
 p {
+  text-align: center;
   font-style: italic;
   font-family: Courier, monospace;
-  color: rgba(71, 16, 43, 0.938);
+  /* background-color: #ad8891c2; */
+  color: rgba(20, 1, 10, 0.993);
   font-size: 15px;
-  background-color: #ebb0bfd5;
-  text-align: center;
+  margin-left: 120px;
+  margin-right: 120px;
+  border-radius: 16px;
 }
 
 h1 {
-  margin-top: 0%;
-  padding: 10px;
-  background-color: #ebb0bfc0;
   text-align: center;
-  color: rgba(71, 16, 43, 0.938);
-  font-style: italic bold;
-  font-size: 60px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic bold;
+  color: rgba(71, 16, 43, 0.938);
+  font-size: 60px;
+  margin-top: 0%;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding: 10px;
+  border-radius: 16px;
 }
 
 main {
-  background-color: #ebb0bf65;
-  border: solid rgba(71, 16, 43, 0.938);
-
   display: flex;
   justify-content: space-evenly;
+  /* background-color: #ebb0bf3b;
+  border: solid rgba(71, 16, 43, 0.938); */
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 16px;
 }
 
 button {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   align-self: center;
   flex-direction: column;
   background-color: #f1a3b6c9;
   color: rgba(71, 16, 43, 0.938);
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
   border-radius: 6px;
   font-size: 18px;
   margin: 8px 0;
 }
 
 footer {
-  margin-top: 10px;
-  background-color: #e5b6c2f1;
-  color: rgba(71, 16, 43, 0.938);
-  padding: 10px 20px;
   text-align: center;
+  /* background-color: #b4919a8e; */
+  color: rgba(42, 5, 23, 0.938);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 
-#ola {
+.styLetters {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #b4919a;
+  margin-bottom: auto;
+  display: flex;
+  margin-top: 20px;
+}
+
+#styleDisplace {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #b4919ae0;
+  font-size: 15px;
+}
+
+#btnStyle {
   display: flex;
   flex-direction: column;
   align-self: center;
 }
 
-#oi {
-  margin: 8px;
+#numberDisplace {
+  margin-bottom: 50px;
+}
+
+#result {
+  margin-bottom: 15px;
+}
+
+#letters {
+  margin-bottom: 15px;
 }

@@ -3,9 +3,15 @@ import cipher from "./cipher.js";
 function lettersCipher() {
   let carta = document.getElementById("letters").value;
   let codigo = Number(document.getElementById("numberDisplace").value);
-  const cartaCifrada = cipher.encode(codigo, carta);
 
-  document.getElementById("result").value = cartaCifrada;
+  if (carta == "") {
+    alert("Digite sua Carta para Continuar");
+  } else if (codigo <= 0) {
+    alert("Digite o Deslocamento para Continuar");
+  } else {
+    const cartaCifrada = cipher.encode(codigo, carta);
+    document.getElementById("result").value = cartaCifrada;
+  }
 }
 
 document.getElementById("btnEncode").addEventListener("click", lettersCipher);
@@ -13,9 +19,15 @@ document.getElementById("btnEncode").addEventListener("click", lettersCipher);
 function lettersDecipher() {
   let carta = document.getElementById("letters").value;
   let codigo = Number(document.getElementById("numberDisplace").value);
-  const cartaDecifrada = cipher.decode(codigo, carta);
 
-  document.getElementById("result").value = cartaDecifrada;
+  if (carta == "") {
+    alert("Digite sua Carta para Continuar");
+  } else if (codigo <= 0) {
+    alert("Digite o Deslocamento para Continuar");
+  } else {
+    const cartaDecifrada = cipher.decode(codigo, carta);
+    document.getElementById("result").value = cartaDecifrada;
+  }
 }
 
 document.getElementById("btnDecode").addEventListener("click", lettersDecipher);
@@ -26,3 +38,15 @@ function clean() {
   document.getElementById("result").value = "";
 }
 document.getElementById("btnClean").addEventListener("click", clean);
+
+function somenteNumero(evt) {
+  var charCode = evt.which ? evt.which : evt.keyCode;
+  if (charCode == 46 || (charCode > 31 && (charCode < 48 || charCode > 57))) {
+    evt.preventDefault();
+    return false;
+  }
+  return true;
+}
+document
+  .getElementById("numberDisplace")
+  .addEventListener("keypress", somenteNumero);

@@ -28,25 +28,14 @@
       </header>
 
       <main>
-        <div id="oi">
-          <input
-            id="numberDisplace"
-            type="text"
-            placeholder="Deslocamento"
-            maxlength="10"
-            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
-          />
-          <div>
-            <textarea
-              id="letters"
-              cols="50"
-              rows="20"
-              placeholder="Digite sua Carta de Amor"
-            ></textarea>
-          </div>
+        <div>
+          <span class="styLetters">DIGITE SUA CARTA</span>
+          <textarea id="letters" cols="50" rows="20"></textarea>
         </div>
 
-        <div id="ola">
+        <div id="btnStyle">
+          <span id="styleDisplace">DIGITE O DESLOCAMENTO</span>
+          <input id="numberDisplace" type="text" maxlength="10" />
           <button id="btnEncode" type="button">
             Criptografar sua carta
           </button>
@@ -57,8 +46,15 @@
             Descriptografar sua Carta
           </button>
         </div>
-
-        <textarea id="result" cols="50" rows="20"></textarea>
+        <div>
+          <span class="styLetters">RESULTADO</span>
+          <textarea
+            id="result"
+            cols="50"
+            rows="20"
+            disabled="disabled"
+          ></textarea>
+        </div>
       </main>
 
       <footer class="end">Desenvolvido Por Mariana Barros</footer>

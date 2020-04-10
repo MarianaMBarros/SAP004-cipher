@@ -1,7 +1,14 @@
 const cipher = {
   encode: function (offset, message) {
-    let newPhrase = "";
+    if (typeof offset != "number" || isNaN(offset)) {
+      throw TypeError("O deslocamento devera ser apenas dado numerico.");
+    }
 
+    if (typeof message != "string" || message.length <= 0) {
+      throw TypeError("Sua carta devera conter ao menos um caracter.");
+    }
+
+    let newPhrase = "";
     for (let i = 0; i < message.length; i++) {
       let letterCode = message[i].charCodeAt();
       // Maiuscula
@@ -16,7 +23,7 @@ const cipher = {
         newPhrase = `${newPhrase}${newLetterAlphabet}`;
         //caracter especial
       } else {
-        newPhrase = message;
+        newPhrase = `${newPhrase}${message[i]}`;
       }
     }
 
@@ -24,6 +31,14 @@ const cipher = {
   },
 
   decode: function (offset, message) {
+    if (typeof offset != "number" || isNaN(offset)) {
+      throw TypeError("O deslocamento devera ser apenas dado numerico.");
+    }
+
+    if (typeof message != "string" || message.length <= 0) {
+      throw TypeError("Sua carta devera conter ao menos um caracter.");
+    }
+
     let newPhrase = "";
 
     for (let i = 0; i < message.length; i++) {
@@ -40,7 +55,7 @@ const cipher = {
         newPhrase = `${newPhrase}${newLetterAlphabet}`;
         //caracter especial
       } else {
-        newPhrase = message;
+        newPhrase = `${newPhrase}${message[i]}`;
       }
     }
     return newPhrase;
