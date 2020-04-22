@@ -1,65 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Crifas do Amor</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <header>
-        <h1>CIFRAS DO AMOR</h1>
-        <div>
-          <p>
-            Uma carta de amor simboliza a importância da relação de carinho e
-            desejo de estar com a pessoa amada. <br />
-            Vivermos numa era digital, com isso hoje as escritas a mão estão
-            guardadas em uma gaveta.<br />Podemos manter hábitos antigos com o
-            mesmo gesto de carinho e nos comunicando com alguém que tanto
-            amamos.<br />
-            E ao escreve-las nos faz acreditar que mesmo em tempos de tecnologia
-            ainda podemos manter a nossa privacidade. <br />Para que isso
-            aconteça basta você digitar a sua carta, criptografa-la e enviar a
-            carta já criptografada para a pessoa que deseja. <br />Ao recebe-la
-            ela poderá retornar e descriptografia para ler o seu conteúdo.<br />
-            Assim apenas você e a pessoa saberá o conteúdo da carta.
-          </p>
-        </div>
-      </header>
 
-      <main>
-        <div>
-          <span class="styLetters">DIGITE SUA CARTA</span>
-          <textarea id="letters" cols="50" rows="20"></textarea>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Crifas do Amor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div id="btnStyle">
-          <span id="styleDisplace">DIGITE O DESLOCAMENTO</span>
-          <input id="numberDisplace" type="text" maxlength="10" />
-          <button id="btnEncode" type="button">
-            Criptografar sua carta
-          </button>
+<body>
+  <header>
+    <h1 class="title">CIFRAS DO AMOR</h1>
+    <p class="introduction">
+      Uma carta de amor simboliza a importância da relação de carinho e desejo
+      de estar com a pessoa amada. <br />
+      Vivermos numa era digital, com isso hoje as escritas a mão estão
+      guardadas em uma gaveta.<br />Podemos manter hábitos antigos com o mesmo
+      gesto de carinho e nos comunicando com alguém que tanto amamos.<br />
+      E ao escreve-las nos faz acreditar que mesmo em tempos de tecnologia
+      ainda podemos manter a nossa privacidade. <br />Para que isso aconteça
+      basta você digitar a sua carta, criptografa-la e enviar a carta já
+      criptografada para a pessoa que deseja. <br />Ao recebe-la ela poderá
+      retornar e descriptografia para ler o seu conteúdo.<br />
+      Assim apenas você e a pessoa saberá o conteúdo da carta.
+    </p>
+  </header>
+  <main class="content">
+    <fieldset>
+      <label class="label-letters">DIGITE SUA CARTA</label>
+      <textarea id="letters" class="text" cols="50" rows="20"></textarea>
+    </fieldset>
+    <fieldset class="button-style">
+      <label class="displace">DIGITE O DESLOCAMENTO</label>
+      <input id="number-displace" type="number" />
+      <button id="btn-encode" class="button">Criptografar sua carta</button>
+      <button id="btn-clean" class="button">Limpar</button>
+      <button id="btn-decode" class="button">Descriptografar sua Carta</button>
+    </fieldset>
+    <fieldset>
+      <label class="label-letters">RESULTADO</label>
+      <textarea id="result" class="text" cols="50" rows="20" disabled="disabled"></textarea>
+    </fieldset>
+  </main>
+  <footer class="footer">Desenvolvido Por Mariana Barros</footer>
+  <script src="index.js" type="module"></script>
+</body>
 
-          <button id="btnClean" type="button">Limpar</button>
-
-          <button id="btnDecode" type="button">
-            Descriptografar sua Carta
-          </button>
-        </div>
-        <div>
-          <span class="styLetters">RESULTADO</span>
-          <textarea
-            id="result"
-            cols="50"
-            rows="20"
-            disabled="disabled"
-          ></textarea>
-        </div>
-      </main>
-
-      <footer class="end">Desenvolvido Por Mariana Barros</footer>
-
-      <script src="index.js" type="module"></script>
-    </div>
-  </body>
 </html>

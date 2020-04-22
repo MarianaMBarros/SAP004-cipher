@@ -1,52 +1,38 @@
 import cipher from "./cipher.js";
-// const fraseCifrada = cipher.encode(1, "mariana");
-function lettersCipher() {
-  let carta = document.getElementById("letters").value;
-  let codigo = Number(document.getElementById("numberDisplace").value);
+//getElementById:Esse método retorna o elemento que estiver contendo o nome do ID passado.
+const letters = document.getElementById("letters");
+//number para restringir apenas em numeros.
+const codigo = document.getElementById("number-displace");
 
-  if (carta == "") {
+document.getElementById("btn-encode").addEventListener("click", lettersCipher);
+document.getElementById("btn-decode").addEventListener("click", lettersDecipher);
+document.getElementById("btn-clean").addEventListener("click", clean);
+
+function lettersCipher() {
+  if (letters == "") {
     alert("Digite sua Carta para Continuar");
-  } else if (codigo <= 0) {
+  } else if (codigo.valueAsNumber <= 0) {
     alert("Digite o Deslocamento para Continuar");
   } else {
-    const cartaCifrada = cipher.encode(codigo, carta);
-    document.getElementById("result").value = cartaCifrada;
+    const lettersCipher = cipher.encode(codigo.valueAsNumber, letters.value);
+    document.getElementById("result").value = lettersCipher;
   }
 }
-
-document.getElementById("btnEncode").addEventListener("click", lettersCipher);
+//addEventListener:O tipo de evento que você deseja
 
 function lettersDecipher() {
-  let carta = document.getElementById("letters").value;
-  let codigo = Number(document.getElementById("numberDisplace").value);
-
-  if (carta == "") {
+  if (letters == "") {
     alert("Digite sua Carta para Continuar");
   } else if (codigo <= 0) {
     alert("Digite o Deslocamento para Continuar");
   } else {
-    const cartaDecifrada = cipher.decode(codigo, carta);
-    document.getElementById("result").value = cartaDecifrada;
+    const lettersDecipher = cipher.decode(codigo.valueAsNumber, letters.value);
+    document.getElementById("result").value = lettersDecipher;
   }
 }
-
-document.getElementById("btnDecode").addEventListener("click", lettersDecipher);
 
 function clean() {
   document.getElementById("letters").value = "";
-  document.getElementById("numberDisplace").value = "";
+  document.getElementById("number-displace").value = "";
   document.getElementById("result").value = "";
 }
-document.getElementById("btnClean").addEventListener("click", clean);
-
-function somenteNumero(evt) {
-  var charCode = evt.which ? evt.which : evt.keyCode;
-  if (charCode == 46 || (charCode > 31 && (charCode < 48 || charCode > 57))) {
-    evt.preventDefault();
-    return false;
-  }
-  return true;
-}
-document
-  .getElementById("numberDisplace")
-  .addEventListener("keypress", somenteNumero);
