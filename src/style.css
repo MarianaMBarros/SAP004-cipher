@@ -4,17 +4,29 @@ html {
   background-repeat: no-repeat;
   margin: auto;
 }
-/* body {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: auto;
-} */
 
-p {
+fieldset {
+  border: none;
+}
+
+.text{
+  margin-bottom: 15px;
+}
+
+.footer{
+  text-align: center;
+  color: rgba(42, 5, 23, 0.938);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.introduction {
   text-align: center;
   font-style: italic;
   font-family: Courier, monospace;
-  /* background-color: #ad8891c2; */
   color: rgba(20, 1, 10, 0.993);
   font-size: 15px;
   margin-left: 120px;
@@ -22,7 +34,7 @@ p {
   border-radius: 16px;
 }
 
-h1 {
+.title{
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic bold;
@@ -35,41 +47,26 @@ h1 {
   border-radius: 16px;
 }
 
-main {
+.content {
   display: flex;
   justify-content: space-evenly;
-  /* background-color: #ebb0bf3b;
-  border: solid rgba(71, 16, 43, 0.938); */
   margin-left: 80px;
   margin-right: 80px;
   border-radius: 16px;
 }
 
-button {
+.button {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  display: flex;
-  align-self: center;
-  flex-direction: column;
   background-color: #f1a3b6c9;
   color: rgba(71, 16, 43, 0.938);
   border-radius: 6px;
   font-size: 18px;
   margin: 8px 0;
+
 }
 
-footer {
-  text-align: center;
-  /* background-color: #b4919a8e; */
-  color: rgba(42, 5, 23, 0.938);
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-left: 500px;
-  margin-right: 500px;
-}
-
-.styLetters {
+.label-letters {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #b4919a;
   margin-bottom: auto;
@@ -77,27 +74,23 @@ footer {
   margin-top: 20px;
 }
 
-#styleDisplace {
+.displace {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #b4919ae0;
   font-size: 15px;
 }
 
-#btnStyle {
+.button-style {
   display: flex;
   flex-direction: column;
   align-self: center;
 }
 
-#numberDisplace {
+#number-displace{
   margin-bottom: 50px;
 }
 
-#result {
-  margin-bottom: 15px;
-}
 
-#letters {
-  margin-bottom: 15px;
-}
+
+
