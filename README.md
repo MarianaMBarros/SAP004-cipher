@@ -1,9 +1,6 @@
 # Cifra de César
 
 ## Índice
-
-- [Cifra de César](#cifra-de-c%c3%a9sar)
-  - [Índice](#%c3%8dndice)
   - [1. Prefácio](#1-pref%c3%a1cio)
   - [2. Resumo do Projeto](#2-resumo-do-projeto)
   - [4. Considerações](#4-considera%c3%a7%c3%b5es)
