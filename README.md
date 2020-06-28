@@ -1,10 +1,14 @@
 # Cifra de César
 
 ## Índice
+<<<<<<< HEAD
 
 - [Cifra de César](#cifra-de-césar)
   - [Índice](#índice)
   - [1. Prefácio](#1-prefácio)
+=======
+  - [1. Prefácio](#1-pref%c3%a1cio)
+>>>>>>> 6a2cdce2842299bbed9ad2c445a0934260cbf806
   - [2. Resumo do Projeto](#2-resumo-do-projeto)
   - [3. Considerações](#3-considerações)
   - [4. Implementações futuras](#4-implementações-futuras)
