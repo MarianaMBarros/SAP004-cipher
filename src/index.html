@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Crifas do Amor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <title>Crifas do Amor</title>
 </head>
 
 <body>
   <header>
-    <h1 class="title">CIFRAS DO AMOR</h1>
+    <img src="https://fontmeme.com/permalink/200625/a1332b39d65fbd9ae055c40a56e7fbf3.png" alt="fonte-de-meus-15-anos"
+      class="title" border="0" />
     <p class="introduction">
       Uma carta de amor simboliza a importância da relação de carinho e desejo
       de estar com a pessoa amada. <br />
@@ -25,23 +28,33 @@
     </p>
   </header>
   <main class="content">
-    <fieldset>
-      <label class="label-letters">DIGITE SUA CARTA</label>
-      <textarea id="letters" class="text" cols="50" rows="20"></textarea>
-    </fieldset>
-    <fieldset class="button-style">
+    <div class="cipher">
+      <textarea id="letters" class="text" cols="50" rows="12" placeholder=" DIGITE SUA CARTA"></textarea>
+    </div>
+    <div class="button-style">
       <label class="displace">DIGITE O DESLOCAMENTO</label>
       <input id="number-displace" type="number" />
       <button id="btn-encode" class="button">Criptografar sua carta</button>
-      <button id="btn-clean" class="button">Limpar</button>
       <button id="btn-decode" class="button">Descriptografar sua Carta</button>
-    </fieldset>
-    <fieldset>
-      <label class="label-letters">RESULTADO</label>
-      <textarea id="result" class="text" cols="50" rows="20" disabled="disabled"></textarea>
-    </fieldset>
+      <button id="btn-clean" class="button">Limpar</button>
+      <button id="btn-enviar" class="button">Enviar</button>
+    </div>
+    <div>
+      <textarea id="result" class="text" cols="50" rows="12" disabled="disabled" placeholder=" RESULTADO"></textarea>
+    </div>
   </main>
-  <footer class="footer">Desenvolvido Por Mariana Barros</footer>
+  <footer>
+    <div class="footer">
+      <p>Desenvolvido por:</p>
+      <div class="link">
+        <a href="https://marianambarros.github.io/portifolio/" target="_blank">Mariana Barros</a>
+        <span>
+          <a href="https://github.com/MarianaMBarros" target="_blank"><img src="img/github1.png" /></a>
+          <a href="https://www.linkedin.com/in/marianambarros/" target="_blank"><img src="img/linkedin1.png" /></a>
+        </span>
+      </div>
+    </div>
+  </footer>
   <script src="index.js" type="module"></script>
 </body>
 

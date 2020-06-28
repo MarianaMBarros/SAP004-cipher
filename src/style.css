@@ -1,58 +1,14 @@
-html {
-  background: url("img.jpg");
+body {
+  background: url("img/img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
 }
 
-fieldset {
-  border: none;
-}
-
-.text{
-  margin-bottom: 15px;
-}
-
-.footer{
-  text-align: center;
-  color: rgba(42, 5, 23, 0.938);
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-left: 500px;
-  margin-right: 500px;
-}
-
-.introduction {
-  text-align: center;
-  font-style: italic;
-  font-family: Courier, monospace;
-  color: rgba(20, 1, 10, 0.993);
-  font-size: 15px;
-  margin-left: 120px;
-  margin-right: 120px;
-  border-radius: 16px;
-}
-
-.title{
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic bold;
-  color: rgba(71, 16, 43, 0.938);
-  font-size: 60px;
-  margin-top: 0%;
-  margin-left: 400px;
-  margin-right: 400px;
-  padding: 10px;
-  border-radius: 16px;
-}
-
-.content {
+header{
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 80px;
-  margin-right: 80px;
-  border-radius: 16px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {
@@ -63,7 +19,77 @@ fieldset {
   border-radius: 6px;
   font-size: 18px;
   margin: 8px 0;
+}
 
+.button-style {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.cipher{
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 16px;
+}
+
+.displace {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #d4bbc1;
+  color: rgba(20, 1, 10, 0.993);
+  font-size: 15px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color: #d4bbc1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+}
+
+.footer p{
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.footer a{
+  color: rgba(20, 1, 10, 0.993);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.footer img{
+  height: 20px;
+  width: 20px;
+}
+
+.footer img:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.introduction {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  background-color: #d4bbc1d0;
+  color: rgba(20, 1, 10, 0.993);
+  font-size:  bold 12px;
+  padding: 20px;
+  margin-left: 120px;
+  margin-right: 120px;
+  border-radius: 16px;
 }
 
 .label-letters {
@@ -74,23 +100,30 @@ fieldset {
   margin-top: 20px;
 }
 
-.displace {
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #b4919ae0;
-  font-size: 15px;
+.link, .footer span{
+  margin: 10px;
 }
 
-.button-style {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+.text{
+  background-color: #ffebf2;
+  font-family: 'Cinzel', serif;
+  background-repeat: no-repeat;
+  font-size:  bold 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
-#number-displace{
-  margin-bottom: 50px;
+.text:focus {
+  border-color: #cccccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
+.title{
+  max-width: 500px;
+  margin-top: 20px;
+}
 
 
 
