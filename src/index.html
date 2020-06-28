@@ -30,18 +30,19 @@
   </header>
   <main class="content">
     <div class="cipher">
-      <textarea id="letters" class="text" cols="50" rows="12" placeholder=" DIGITE SUA CARTA"></textarea>
+      <textarea id="letters" class="text enabled" cols="50" rows="12" placeholder=" DIGITE SUA CARTA"></textarea>
     </div>
     <div class="button-style">
       <label class="displace">DIGITE O DESLOCAMENTO</label>
-      <input id="number-displace" type="number" />
+      <input id="number-displace" class="enabled" type="number" />
       <button id="btn-encode" class="button">Criptografar sua carta</button>
       <button id="btn-decode" class="button">Descriptografar sua Carta</button>
       <button id="btn-clean" class="button">Limpar</button>
       <!-- <button id="btn-enviar" class="button">Enviar</button> -->
     </div>
     <div>
-      <textarea id="result" class="text" cols="50" rows="12" disabled="disabled" placeholder=" RESULTADO"></textarea>
+      <textarea id="result" class="text disabled" cols="50" rows="12" disabled="disabled"
+        placeholder=" RESULTADO"></textarea>
     </div>
   </main>
   <footer>
