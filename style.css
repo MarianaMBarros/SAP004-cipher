@@ -1,4 +1,8 @@
-body {
+*{
+  cursor: url("./img/cursor.png") 1 1, default;
+}
+
+body{
   background: url("img/img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,6 +43,9 @@ header{
   margin-right: 80px;
   border-radius: 16px;
 }
+.disabled{
+  background-color: #dfc1cc;
+}
 
 .displace {
   text-align: center;
@@ -46,6 +53,10 @@ header{
   background-color: #d4bbc1;
   color: rgba(20, 1, 10, 0.993);
   font-size: 15px;
+}
+
+.enabled{
+  background-color: #ffebf2;
 }
 
 .footer{
@@ -105,7 +116,6 @@ header{
 }
 
 .text{
-  background-color: #ffebf2;
   font-family: 'Cinzel', serif;
   background-repeat: no-repeat;
   font-size:  bold 15px;
