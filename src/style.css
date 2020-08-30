@@ -1,7 +1,3 @@
-*{
-  /* cursor: url("./img/cursor.png") 1 1, default; */
-}
-
 body{
   background: url("img/img.jpg");
   background-size: cover;
