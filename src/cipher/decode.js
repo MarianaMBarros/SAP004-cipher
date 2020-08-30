@@ -1,6 +1,6 @@
 import { isLowerCase, isUpperCase } from "./util.js"
 
-export default function decode(offset, message, numberLowerCase, numberUpperCase) {
+export default function decode(offset, message) {
   if (typeof offset != "number" || isNaN(offset)) {
     throw TypeError("O deslocamento devera ser apenas dado numerico.");
   }
