@@ -1,4 +1,4 @@
-import cipher from "./cipher.js";
+import cipher from "./cipher/index.js";
 
 const letters = document.getElementById("letters");
 const codigo = document.getElementById("number-displace");
