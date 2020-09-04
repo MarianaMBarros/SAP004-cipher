@@ -1,4 +1,4 @@
-import cipher from "./cipher.js";
+import cipher from "./cipher/index.js";
 
 const letters = document.getElementById("letters");
 const codigo = document.getElementById("number-displace");
@@ -31,6 +31,15 @@ const clean = () => {
   document.getElementById("result").value = "";
 }
 
+function copy() {
+  const result = document.getElementById("result");
+  result.disabled = false;
+  result.select();
+  document.execCommand("copy");
+  result.disabled = true;
+}
+
 document.getElementById("btn-encode").addEventListener("click", lettersCipher);
 document.getElementById("btn-decode").addEventListener("click", lettersDecipher);
 document.getElementById("btn-clean").addEventListener("click", clean);
+document.getElementById("btn-copy").addEventListener("click", copy);
